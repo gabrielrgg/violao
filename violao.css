@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* IMAGEM DO FUNDO NAS LATERAIS */
+    background-image: url("../imagens/fundinho.jpg");
+    background-size: 40%px;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* SITE CENTRAL*/
+
+header,
+.sobre,
+.produtos,
+.endereco,
+.contato,
+footer {
+    width: 930px;
+    margin: 0 auto;
+}
+
+
+/*CABEÇALHO*/
+
+.banner {
+    height: 140px;
+
+    background-image: url("../imagens/fundo\ violao2.jpg");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+
+nav {
+    position: absolute;
+
+    right: 5%;
+    bottom: 15px;
+
+    background-color: white;
+
+    padding: 12px 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+
+    margin: 0 15px;
+
+    font-size: 14px;
+}
+
+
+/*SOBRE A LOJA*/
+
+.sobre {
+    background-color: #c90000;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 40px;
+
+    padding: 20px 40px;
+
+    border-top: 8px solid rgba(189, 144, 144, 0.5);
+
+}
+
+.texto {
+    width: 48%;
+
+    background-color: #bd9090;
+
+    color: white;
+
+    padding: 25px;
+}
+
+.texto h1 {
+    font-size: 22px;
+
+    margin-bottom: 25px;
+}
+
+.texto p {
+    font-size: 14px;
+
+    line-height: 1.4;
+
+    margin-bottom: 10px;
+}
+
+.imagem-loja {
+    width: 48%;
+}
+
+.imagem-loja img {
+    width: 100%;
+    height: 215px;
+
+    object-fit: cover;
+}
+
+
+/*PRODUTOS*/
+
+.produtos {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+    padding: 30px 40px;
+
+    background-color: #f5ffff;
+
+    border-top: 8px solid rgba(189, 144, 144, 0.5);
+
+}
+
+.produto {
+    background-color: white;
+
+    text-align: center;
+
+    padding: 25px 10px;
+
+    min-height: 270px;
+}
+
+.produto img {
+    width: 150px;
+    height: 120px;
+
+    object-fit: contain;
+}
+
+.produto h3 {
+    font-size: 13px;
+
+    font-weight: normal;
+
+    margin-top: 15px;
+}
+
+.produto strong {
+    display: block;
+
+    color: #d00000;
+
+    margin-top: 5px;
+}
+
+
+/*ENDEREÇO*/
+
+.endereco {
+    background-color: #c45a0b;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    padding: 20px 30px;
+
+    border-top: 8px solid #bd9090;
+
+}
+
+.mapa {
+    width: 50%;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 215px;
+
+    border: 0;
+}
+
+.texto-endereco {
+    width: 45%;
+
+    background-color: #bd9090;
+
+    color: white;
+
+    padding: 25px;
+}
+
+.texto-endereco h1 {
+    font-size: 20px;
+
+    margin-bottom: 25px;
+}
+
+.texto-endereco p {
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/*CONTATO*/
+
+.contato {
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 25px 30px;
+
+    background-color: white;
+
+    border-top: 8px solid #bd9090;
+
+    border-right: 20px solid #bd9090;
+
+}
+
+.formulario {
+    width: 45%;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.formulario label {
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+.formulario input {
+    height: 32px;
+
+    margin-bottom: 15px;
+
+    padding: 5px;
+}
+
+.formulario textarea {
+    height: 110px;
+
+    resize: none;
+
+    padding: 8px;
+
+    margin-bottom: 15px;
+}
+
+.formulario button {
+    height: 32px;
+
+    cursor: pointer;
+    
+}
+
+
+/*REDES SOCIAIS*/
+
+.redes {
+    width: 40%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.redes h2 {
+    color: #061b68;
+
+    font-size: 19px;
+
+    margin-bottom: 20px;
+}
+
+.icones {
+    display: flex;
+
+    gap: 10px;
+}
+
+.icones img {
+    width: 70px;
+    height: 70px;
+
+    object-fit: contain;
+}
+
+
+/*RODAPÉ*/
+
+footer {
+
+    border-top: 8px solid #bd9090;
+
+    background-color: black;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+}
+
+footer h3 {
+    font-size: 14px;
+}
+
+footer p {
+    font-size: 12px;
+
+    margin-top: 3px;
+}
+
+.footer-redes {
+    margin-top: 10px;
+}
+
+.footer-redes img {
+    width: 25px;
+    height: 25px;
+
+    margin: 0 5px;
+}
